@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         //使用 UIDatePicker(frame:) 建立一個 UIDatePicker
         myDatePicker = UIDatePicker(frame: CGRect(
           x: 0, y: 0,
-          width: fullScreenSize.width, height: 100))
+          width: fullScreenSize.width, height: 250))
 
         //設置 UIDatePicker 偏好的選取模式
         myDatePicker.preferredDatePickerStyle = .wheels
