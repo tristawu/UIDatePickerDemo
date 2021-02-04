@@ -9,7 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //建立兩個屬性
+    /*建立兩個屬性,同
+     @IBOutlet weak var myLabel: UILabel!
+     @IBOutlet weak var myDatePicker: UIDatePicker!
+    */
     var myDatePicker: UIDatePicker!
     var myLabel: UILabel!
     
@@ -65,11 +68,10 @@ class ViewController: UIViewController {
           y: fullScreenSize.height * 0.4)
         self.view.addSubview(myDatePicker)
         
-        //設置改變日期時間時會執行動作的方法
-        myDatePicker.addTarget(self,
-                               action:
-                                #selector(ViewController.datePickerChanged),
-                               for: .valueChanged)
+        /*設置改變日期時間時會執行動作的方法,同
+         @IBAction func datePickerChanged(_ sender: Any)
+        */
+        myDatePicker.addTarget(self,action:#selector(ViewController.datePickerChanged),for: .valueChanged)
         
         
         //建立一個 UILabel 來顯示改變日期時間後的結果
